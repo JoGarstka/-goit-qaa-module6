@@ -1,1 +1,15 @@
+name: Cypress Run 
 
+on:
+push:
+branches: [ master ]
+
+jobs:
+cypress-run:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Open Cypress tests
+        run: npm run cy:run
