@@ -1,7 +1,6 @@
 name: Cypress Run 
 
-on:
-push:
+on: push
 branches: [ master ]
 
 jobs:
@@ -13,3 +12,4 @@ cypress-run:
         run: npm install
       - name: Open Cypress tests
         run: npm run cy:run
+      - browser: chrome  
