@@ -4,7 +4,7 @@ on: push
 branches: [ master ]
 
 jobs:
-cypress-run:
+  cypress-run:
     runs-on: windows-latest
     steps:
       - name: Checkout
