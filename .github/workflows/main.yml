@@ -1,4 +1,4 @@
-ame: Cypress Run 
+name: Cypress Run 
 
 on: push
 branches: [ master ]
